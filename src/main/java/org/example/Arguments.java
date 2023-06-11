@@ -18,7 +18,7 @@ public class Arguments {
     @Parameter(names = "--subjects",required = true, description = "Subjects student opted for")
     public List<String> subjectList;
 
-    @Parameter(names = {"-password","-p"}, description = "Connection password", password = true, required = true)
+    @Parameter(names = {"-password","-p"}, description = "Connection password", password = true, required = true, echoInput = false)
     public String studentPassword;
 
     @Parameter(names = "--petName", description = "pet name of the student")
