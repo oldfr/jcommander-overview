@@ -24,4 +24,7 @@ public class Arguments {
     @Parameter(names = "--petName", description = "pet name of the student")
     public String petName;
 
+    @Parameter(names = "--isSpeciallyAbled", description = "Flag if student is specially abled")
+    public Boolean isSpeciallyAbled = false;
+
 }

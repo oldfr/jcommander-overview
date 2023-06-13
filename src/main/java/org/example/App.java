@@ -27,10 +27,12 @@ public class App
         List<String> subjectsOpted = arguments.subjectList;
         String studentPetName = arguments.petName;
         String studentPassword = arguments.studentPassword;
+        Boolean studentIsSpeciallyAbled = arguments.isSpeciallyAbled;
         System.out.println("Student Name: "+studentName);
         System.out.println("Student age: "+studentAge);
         System.out.println("Student opted for subjects: "+String.join(", ",subjectsOpted));
         System.out.println("Student password: "+studentPassword);
+        System.out.println("Student is specially abled:"+studentIsSpeciallyAbled);
         if(Objects.nonNull(studentPetName))
             System.out.println("Student pet name: "+studentPetName);
     }
