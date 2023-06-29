@@ -32,21 +32,6 @@
 
   <build>
     <plugins>
-     <!-- <plugin>
-        &lt;!&ndash; Build an executable JAR &ndash;&gt;
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.1.0</version>
-        <configuration>
-          <archive>
-            <manifest>
-&lt;!&ndash;              <addClasspath>true</addClasspath>&ndash;&gt;
-&lt;!&ndash;              <classpathPrefix>lib/</classpathPrefix>&ndash;&gt;
-              <mainClass>org.example.App</mainClass>
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin>-->
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
         <executions>
@@ -61,7 +46,6 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-<!--              <classpathPrefix>lib/</classpathPrefix>-->
               <mainClass>org.example.App</mainClass>
             </manifest>
           </archive>
